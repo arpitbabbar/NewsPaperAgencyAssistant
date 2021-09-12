@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="imgCustomer" minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="showAllforms.allViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="21.0" prefHeight="48.0" prefWidth="471.0" text="NewsPaper Agency Assistant">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutY="37.0" prefHeight="22.0" prefWidth="500.0" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="59.0" prefHeight="48.0" prefWidth="203.0" text="DashBoard">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="107.0" prefHeight="29.0" prefWidth="122.0" text="PaperMaster">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgPaper" fitHeight="109.0" fitWidth="122.0" layoutX="21.0" layoutY="150.0" onMouseClicked="#showPaperMaster" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img_573740.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="169.0" layoutY="107.0" prefHeight="29.0" prefWidth="164.0" text="Customer Manager">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCust" fitHeight="107.0" fitWidth="99.0" layoutX="201.0" layoutY="150.0" onMouseClicked="#showCustomerManager" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@82-825085_customer-loyalty-icon.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="352.0" layoutY="107.0" prefHeight="29.0" prefWidth="148.0" text="Hawker">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgHawker" fitHeight="107.0" fitWidth="99.0" layoutX="377.0" layoutY="150.0" onMouseClicked="#showHawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unnamed.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="270.0" prefHeight="29.0" prefWidth="122.0" text="Bill Generator">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBillGen" fitHeight="109.0" fitWidth="122.0" layoutX="27.0" layoutY="309.0" onMouseClicked="#showBillGen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="182.0" layoutY="270.0" prefHeight="29.0" prefWidth="129.0" text="View Customers">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgViewCust" fitHeight="109.0" fitWidth="122.0" layoutX="186.0" layoutY="320.0" onMouseClicked="#showCustomerDisplay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Customers-Icon.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="352.0" layoutY="270.0" prefHeight="29.0" prefWidth="129.0" text="Bill Collector">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBollColl" fitHeight="99.0" fitWidth="109.0" layoutX="367.0" layoutY="320.0" onMouseClicked="#showBillCollector" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@istockphoto-950364724-612x612.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

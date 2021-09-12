@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="650.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawkerControlPanel.hawkerPanelViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="14.0" prefHeight="48.0" prefWidth="369.0" text="Hawker's Control Panel">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="115.0" layoutY="43.0" prefHeight="38.0" prefWidth="401.0" />
+      <ImageView fitHeight="159.0" fitWidth="132.0" layoutX="104.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cartoon-newspaper-boy-yelling-vector-16707002.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="351.0" layoutY="72.0" prefHeight="38.0" prefWidth="121.0" text="Name">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboName" editable="true" layoutX="310.0" layoutY="116.0" prefHeight="29.0" prefWidth="203.0" promptText="Hawker's Name" />
+      <Button fx:id="btnSearch" layoutX="339.0" layoutY="158.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="38.0" prefWidth="146.0" text="Search Hawker">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="252.0" prefHeight="29.0" prefWidth="113.0" text="Mobile No.">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="259.0" layoutY="252.0" prefHeight="29.0" prefWidth="113.0" text="Salary">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMob" layoutX="31.0" layoutY="288.0" prefHeight="25.0" prefWidth="155.0" />
+      <TextField fx:id="txtSalary" layoutX="233.0" layoutY="288.0" prefHeight="25.0" prefWidth="155.0" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="313.0" prefHeight="29.0" prefWidth="113.0" text="Address">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="406.0" prefHeight="29.0" prefWidth="139.0" text="Upload Aadhar Pic">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="picAadhar" fitHeight="110.0" fitWidth="166.0" layoutX="63.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@29_11_2019-aadhar_19800047.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnPic" layoutX="90.0" layoutY="553.0" mnemonicParsing="false" onAction="#doChoosePic" text="Choose Pic">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="402.0" layoutY="406.0" prefHeight="29.0" prefWidth="95.0" text="Areas">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listViewAreas" editable="true" layoutX="333.0" layoutY="449.0" prefHeight="129.0" prefWidth="232.0" />
+      <Button fx:id="btnNew" layoutX="31.0" layoutY="595.0" mnemonicParsing="false" onAction="#doNew" prefHeight="32.0" prefWidth="95.0" text="New">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="186.0" layoutY="595.0" mnemonicParsing="false" onAction="#doSave" prefHeight="32.0" prefWidth="95.0" text="Save">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="325.0" layoutY="595.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="32.0" prefWidth="95.0" text="Update">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemove" layoutX="472.0" layoutY="595.0" mnemonicParsing="false" onAction="#doRemove" prefHeight="32.0" prefWidth="95.0" text="Remove">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="449.0" layoutY="252.0" prefHeight="29.0" prefWidth="113.0" text="Add Areas">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtArea" layoutX="422.0" layoutY="288.0" prefHeight="29.0" prefWidth="166.0" />
+      <Button fx:id="btnAdd" layoutX="461.0" layoutY="327.0" mnemonicParsing="false" onAction="#doAddArea" prefHeight="38.0" prefWidth="80.0" text="Add">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtAddress" layoutX="104.0" layoutY="341.0" prefHeight="48.0" prefWidth="298.0" />
+      <Label fx:id="lblResult" layoutX="174.0" layoutY="627.0" prefHeight="17.0" prefWidth="253.0" />
+   </children>
+</AnchorPane>

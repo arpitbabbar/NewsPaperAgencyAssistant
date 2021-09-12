@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillHistory.billHviewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="47.0" prefWidth="500.0" text="Bill History" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="137.0" layoutX="358.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@computer-display-person-line-fill-style-icon-vector-illustration-design-179929648.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="paid1" layoutX="35.0" layoutY="74.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="Paid">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="bill" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="unpaid1" layoutX="114.0" layoutY="74.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="UnPaid" toggleGroup="$bill">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="208.0" layoutY="70.0" mnemonicParsing="false" onAction="#doFetch1" prefHeight="32.0" prefWidth="139.0" text="Fetch Records">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutY="104.0" prefHeight="14.0" prefWidth="360.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="118.0" prefHeight="32.0" prefWidth="177.0" text="Customer Mobile No.">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboMob" editable="true" layoutX="24.0" layoutY="156.0" prefHeight="25.0" prefWidth="157.0" promptText="Enter Mobile No." />
+      <RadioButton fx:id="paid2" layoutX="191.0" layoutY="157.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="Paid">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="bill2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="unpaid2" layoutX="270.0" layoutY="157.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="UnPaid" toggleGroup="$bill2">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="139.0" layoutY="191.0" mnemonicParsing="false" onAction="#doFetch2" prefHeight="32.0" prefWidth="139.0" text="Fetch Records">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="11.0" layoutY="240.0" prefHeight="200.0" prefWidth="478.0" />
+      <Label alignment="CENTER" layoutX="103.0" layoutY="454.0" prefHeight="32.0" prefWidth="177.0" text="Total Amount:">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBill" editable="false" layoutX="272.0" layoutY="458.0" promptText="Amount">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
